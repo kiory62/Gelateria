@@ -1,0 +1,164 @@
+.principal_image {
+    background-image: url("/imagens/banner-sabores.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.principal_image h1 {
+    font-size: 100px;
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    text-shadow: 3px 5px 2px #474747;
+    color: #fff;
+}
+
+.secao_sorvete {
+    padding: 100px 20px;
+    width: 100%;
+}
+
+.secao_sorvete h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px 0 30px 0;
+    font-weight: 500;
+}
+
+.container_sabores {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    max-width: 1024px;
+    gap: 20px;
+}
+
+.div_sabores {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 2px 15px 2px #d9dde1;
+}
+
+.div_sabores h3 {
+    font-size: 18px;
+}
+
+.div_sabores p {
+    font-size: 16px;
+}
+
+.imagens_sabores {
+    margin: auto;
+}
+
+/* Responsividade - 375px até 767px (Mobile) */
+@media (min-width: 375px) and (max-width: 767px) {
+    .principal_image h1 {
+        font-size: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .secao_sorvete {
+        padding: 50px 15px;
+    }
+
+    .secao_sorvete h2 {
+        font-size: 24px;
+        padding: 15px 0 20px 0;
+    }
+
+    .container_sabores {
+        gap: 15px;
+    }
+
+    .div_sabores {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .div_sabores h3 {
+        font-size: 16px;
+    }
+
+    .div_sabores p {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade - 768px até 1023px (Tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .principal_image h1 {
+        font-size: 60px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .secao_sorvete {
+        padding: 70px 20px;
+    }
+
+    .secao_sorvete h2 {
+        font-size: 28px;
+    }
+
+    .container_sabores {
+        gap: 18px;
+    }
+
+    .div_sabores {
+        width: 45%;
+    }
+
+    .div_sabores h3 {
+        font-size: 17px;
+    }
+
+    .div_sabores p {
+        font-size: 15px;
+    }
+}
+
+/* Responsividade - 1024px até 1280px (Desktop) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .principal_image h1 {
+        font-size: 80px;
+        top: 280px;
+        left: 200px;
+    }
+
+    .secao_sorvete {
+        padding: 80px 20px;
+    }
+
+    .secao_sorvete h2 {
+        font-size: 30px;
+    }
+
+    .container_sabores {
+        max-width: 900px;
+        gap: 20px;
+    }
+
+    .div_sabores {
+        width: 280px;
+    }
+
+    .div_sabores h3 {
+        font-size: 18px;
+    }
+
+    .div_sabores p {
+        font-size: 16px;
+    }
+}

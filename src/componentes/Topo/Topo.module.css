@@ -1,0 +1,94 @@
+.header_container {
+    background-color: #f9db79;
+    width: 100%;
+}
+
+.header_mini_container {
+    padding: 0 20px;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.link_logo {
+    text-decoration: none;
+    color: #000000;
+}
+
+.link_logo:hover {
+    font-size: 18px;
+    transition: all 0,3s;
+}
+
+/* Responsividade para 375px (Mobile) */
+@media (min-width: 375px) and (max-width: 767px){
+    .header_mini_container {
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .link_logo {
+        font-size: 14px;
+    }
+
+    .link_logo:hover {
+        font-size: 16px;
+    }
+}
+
+/* Responsividade para 768px ate 1024px (Tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header_mini_container {
+        padding: 0 15px;
+    }
+
+    .links {
+        gap: 25px;
+    }
+
+    .link_logo {
+        font-size: 15px;
+    }
+
+    .link_logo:hover {
+        font-size: 17px;
+    }
+}
+
+/* Responsividade para 1024px ate 1280px (Desktop Small) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .header_mini_container {
+        max-width: 1100px;
+        padding: 0 20px;
+    }
+
+    .links {
+        gap: 35px;
+    }
+
+    .link_logo {
+        font-size: 17px;
+    }
+
+    .link_logo:hover {
+        font-size: 19px;
+    }
+}
