@@ -56,7 +56,7 @@
 }
 
 /* Responsividade - 375px até 767px (Mobile) */
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
     .principal_image h1 {
         font-size: 40px;
         top: 200px;

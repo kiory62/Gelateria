@@ -31,7 +31,7 @@
 }
 
 /* Responsividade para 375px (Mobile) */
-@media (min-width: 375px) and (max-width: 767px){
+@media (min-width: 360px) and (max-width: 767px){
     .header_mini_container {
         padding: 0 10px;
         flex-direction: column;
